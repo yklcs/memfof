@@ -20,6 +20,9 @@ $ uv add git+https://github.com/yklcs/memfof
 The MEMFOF model is exposed in `memfof.MEMFOF`:
 
 ```python
+from memfof import MEMFOF
+import torch
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model_id = "egorchistov/optical-flow-MEMFOF-Tartan-T-TSKH"
 model = MEMFOF.from_pretrained(model_id).eval().to(device)
