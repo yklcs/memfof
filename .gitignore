@@ -7,3 +7,6 @@ ckpts/
 datasets/
 submissions/
 wandb/
+build/
+*.egg-info/
+.venv/

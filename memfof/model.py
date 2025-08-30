@@ -9,12 +9,12 @@ from torchvision.models import (
     WeightsEnum,
 )
 
-from core.update import GMAUpdateBlock
-from core.corr import CorrBlock
-from core.utils.utils import coords_grid, InputPadder
-from core.extractor import ResNetFPN16x
-from core.layer import conv3x3
-from core.gma import Attention
+from memfof.update import GMAUpdateBlock
+from memfof.corr import CorrBlock
+from memfof.utils.utils import coords_grid, InputPadder
+from memfof.extractor import ResNetFPN16x
+from memfof.layer import conv3x3
+from memfof.gma import Attention
 
 
 class MEMFOF(

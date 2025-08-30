@@ -9,9 +9,9 @@ import json
 import random
 from glob import glob
 import os.path as osp
-from core.utils import frame_utils
-from core.utils.augmentor import FlowAugmentor, SparseFlowAugmentor
-from core.utils.utils import merge_flows, fill_invalid
+from memfof.utils import frame_utils
+from memfof.utils.augmentor import FlowAugmentor, SparseFlowAugmentor
+from memfof.utils.utils import merge_flows, fill_invalid
 
 from functools import reduce
 from queue import Queue
